@@ -1,0 +1,101 @@
+/* Base styles */
+body {
+    background-color: green;
+    /*background-color:rgb(76, 167, 86);*/
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+ 
+/* Header styles */
+header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+ 
+/* Section styles */
+section {
+    margin: 20px;
+}
+ 
+/* Footer styles */
+footer {
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+ 
+/* Element selector */
+h2 {
+    color: black;
+}
+ 
+/* Class selector */
+.highlight {
+    background-color: orange;
+    color: white;
+    padding: 4px;
+}
+ 
+/* ID selector */
+#header {
+    border-bottom: 2px solid orange;
+}
+ 
+/* Attribute selector */
+a[href^="mailto:"] {
+    color: orange;
+}
+ 
+/* Pseudo-class selector */
+a:hover {
+    color: white;
+}
+ 
+/* Pseudo-element selector */
+p::first-line {
+    font-weight: bold;
+}
+ 
+/* Combinator selector */
+header + main {
+    border-top: 1px solid gray;
+}
+ 
+/* Inline styles (highest specificity) */
+h1 {
+   
+    color: black !important; /* Overridden by inline styles */
+    font-size: xx-large;
+}
+ 
+/* Internal styles */
+p {
+    color: green;
+}
+ 
+/* External styles */
+p {
+    color: red; /* Overridden by internal styles */
+}
+ 
+.white{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color:aliceblue;
+}
+.p2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:peachpuff;
+}
+.p3{
+    font-family: 'Courier New', Courier, monospace;
+    color: coral;
+}
+.p4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#header h1 {
+    color: orange !important; /* Overridden by !important */
+   
+}
