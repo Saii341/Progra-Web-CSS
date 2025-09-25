@@ -2,7 +2,7 @@ h1{
     text-align: center;
 }
 table{
-    align: center;
+    margin: 0% auto;
     border-collapse: collapse; /*une los bordes*/
     width: 100px;
 }
@@ -18,3 +18,4 @@ td,th{
     color: aliceblue;
 
 }
+
