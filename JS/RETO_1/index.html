@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierra Giratoria</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .tierra {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* lo saque de internets pq no encontraba un png chido
+            */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Earth_Western_Hemisphere_transparent_background.png/480px-Earth_Western_Hemisphere_transparent_background.png');
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            
+        }
+
+        .tierra:hover {
+            animation: girar 3s linear infinite;
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tierra"></div>
+</body>
+</html>

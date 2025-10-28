@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #04041e;
+}
+
+/* Aplicación del Modelo de Caja (box-model) a elementos clave */
+.box-model {
+    /* Agrega un borde para visualizar los límites */
+    border: 1px solid #ccc;
+    /* Relleno interior para separar el contenido del borde */
+    padding: 15px; 
+    /* Margen exterior para separar los elementos entre sí */
+    margin: 10px auto; 
+    /* Sombra sutil para un efecto de elevación */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    /* Fondo para distinguir el área */
+    background-color: white;
+    /* Ancho máximo para centrar y limitar el diseño */
+    max-width: 1000px;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #4CAF50;
+    color: rgba(0, 151, 174, 0.608);
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+/* --- NAVEGACIÓN (NAV) --- */
+nav {
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox para organizar las opciones horizontalmente */
+    justify-content: space-around;
+}
+
+nav li {
+    padding: 10px 0;
+}
+
+nav a {
+    color: rgb(215, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block; /* Hace que el área de clic sea más grande */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* --- IMAGEN INTERACTIVA (BOLA) --- */
+
+/* Contenedor para alinear la imagen con el texto del enlace */
+.ball-container a {
+    display: flex; 
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+#interactive-ball {
+    border-radius: 50%; /* Para que la imagen se vea como una pelota/círculo */
+    transition: transform 0.3s ease-in-out; /* Habilidad para la transformación */
+    border: 2px solid white; /* Borde para resaltarla */
+}
+
+/* Transformación al pasar el mouse (hover) */
+#interactive-ball:hover {
+    /* 1. SE AGRANDA: Escala a 1.5 veces su tamaño (transformación de escala) */
+    transform: scale(1.5) translateX(10px); 
+    /* 2. SE MUEVE: Se desplaza 10px a la derecha (transformación de traslación) */
+    cursor: pointer;
+    box-shadow: 0 0 10px #FF6347;
+}
+
+/* --- SECCIÓN Y IFRAME --- */
+.content {
+    min-height: 500px; /* Altura mínima para el contenido */
+    text-align: center;
+}
+
+.content-frame {
+    width: 98%;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 0 0 5px 5px;
+}

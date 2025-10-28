@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Transicion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animación del código proporcionado
+            poderosisiiiimo keyframe oara
+            las transiciones */
+        @keyframes slideAnimation {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        /*design para lo contenedores de los links*/
+        .sliding-element {
+            display: block;
+            width: 200px;
+            height: 40px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 3px;
+
+            animation-name: slideAnimation;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+        }
+
+        .sliding-element:hover {
+            background-color: #2980b9;
+        }
+
+        .menu-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>  Menú con Transicion</h1>
+    </header>
+
+    
+
+    <section>
+        <h2>Enlaces Importantes</h2>
+        <p>Haz clic en los enlaces para visitar los sitios:</p>
+        
+        <div class="menu-links">
+            <a href="https://www.upslp.edu.mx" target="_blank" class="sliding-element">UPSLP</a>
+            <a href="https://www.google.com" target="_blank" class="sliding-element">Google</a>
+            <a href="https://www.youtube.com" target="_blank" class="sliding-element">YouTube</a>
+            <a href="https://www.netacad.com" target="_blank" class="sliding-element">NetAcad</a>
+            <a href="https://upslp.blackboard.com" target="_blank" class="sliding-element">Blackboard</a>
+        </div>
+    </section>
+
+ 
+</body>
+</html>
