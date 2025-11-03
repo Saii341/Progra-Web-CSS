@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Web Design</title>
+    <style>
+        body {
+            color: #333;
+            background-color: #f4f4f4;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #0654b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navigation-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navigation-menu li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navigation-menu a {
+            text-decoration: none;
+            color: #0654b3;
+            font-weight: bold;
+        }
+
+        .navigation-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            flex: 2;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .feature-list {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .feature-list li {
+            margin-bottom: 8px;
+        }
+
+        .large-text {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .high-contrast-text {
+            color: black;
+            background-color: white;
+            padding: 15px;
+            border: 2px solid black;
+            margin: 10px 0;
+        }
+
+        .footer {
+            background-color: #002766;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #0654b3;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #002766;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Accessible Web Design</h1>
+    </header>
+    
+    <nav>
+        <ul class="navigation-menu">
+            <li><a href="https://www.google.com">Google</a></li>
+            <li><a href="https://www.youtube.com">YouTube</a></li>
+            <li><a href="https://www.amazon.com">Amazon</a></li>
+            <li><a href="https://www.upslp.edu.mx">UPSLP</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <aside class="sidebar">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.youtube.com">YouTube</a></li>
+                <li><a href="https://www.amazon.com">Amazon</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <section class="about">
+                <h2>About Us</h2>
+                <p>We are dedicated to creating accessible web designs.</p>
+            </section>
+            
+            <section class="features">
+                <h2>Features</h2>
+                <ul class="feature-list">
+                    <li>Clear Navigation</li>
+                    <li>Identifiable Links</li>
+                    <li>Simple Layouts</li>
+                    <li>Readable Text</li>
+                    <li>Screen Reader Accessibility</li>
+                </ul>
+                <p>For more information, visit our <a href="https://www.google.com">Help Center</a>.</p>
+            </section>
+            
+            <section class="example">
+                <h2>Example Text</h2>
+                <p>This is standard text with a font size of 16px.</p>
+                <p class="large-text">This text is larger for better visibility.</p>
+                <div class="high-contrast-text">
+                    This is high contrast text.
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2050 Accessible Web Design</p>
+    </footer>
+</body>
+</html>
